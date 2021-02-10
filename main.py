@@ -26,13 +26,8 @@ def randomString(stringLength=10):
     letters = string.ascii_lowercase+"0123456789"+"""£$%^&*"""
     return ''.join(random.choice(letters) for i in range(stringLength))
 
-app = Flask(__name__, static_url_path='', static_folder='')
+app = Flask(__name__)
 app.secret_key = "CHANGE_THIS"
-
-@app.before_request
-def make_session_permanent():
-    session.permanent = True
-    app.permanent_session_lifetime = timedelta(days=2)
 
 @app.route("/403")
 def err403():
