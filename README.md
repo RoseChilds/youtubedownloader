@@ -4,7 +4,7 @@ A YouTuber to MP4 converter without the annoying ads
 
 ## Installation
 
-    git clone https://github.com/RoseChilds/youtuberdownloader.git
+    git clone https://github.com/RoseChilds/youtubedownloader.git
     cd youtubedownloader
     pip install -r requirements.txt
     python main.py
