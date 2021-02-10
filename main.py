@@ -64,6 +64,5 @@ def getvideo():
 def index():
     return open("index.html", "r").read()
 
-app.config['SERVER_NAME'] = "localhost:8012"
 if __name__ == "__main__":
     serve(app,port=8012, host="localhost", threads=50)
